@@ -145,7 +145,7 @@ function find(query) {
     return Object
         .keys(phoneBook)
         .reduce(reducer, [])
-        .sort();
+        .sort((a, b) => a.localeCompare(b));
 }
 
 /**
